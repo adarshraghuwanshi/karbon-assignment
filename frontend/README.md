@@ -1,4 +1,5 @@
-Steps to run frontend--
--- cd frontend
--- npm install
--- npm run dev
+## Steps to Run Frontend
+
+cd frontend
+npm install
+npm run dev
