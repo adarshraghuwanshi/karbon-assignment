@@ -1,0 +1,108 @@
+.user-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    //   background-color: #0056b3;
+      
+  
+    //   &__name {
+    //     font-size: 18px;
+    //     font-weight: bold;
+    //     background-color: #218838;
+    //     color:blue;
+        
+    //   }
+    .user-card__name{
+        font-size: 18px;
+            font-weight: semi-bold;
+            // background-color: #218838;
+            // color:blue;
+
+    }
+    .status_green {   
+        padding:1px;
+        width: 10px; 
+        height: 10px; 
+        border-radius: 50%;
+        background-color: green; 
+      }
+      .status_purple {   
+        padding:1px;
+        width: 10px; 
+        height: 10px; 
+        border-radius: 50%;
+        background-color: purple; 
+      }
+      .status_orange {   
+        padding:1px;
+        width: 10px; 
+        height: 10px; 
+        border-radius: 50%;
+        background-color: orange; 
+      }
+
+    }
+  
+    &__details {
+      font-size: 14px;
+      line-height: 1.5;
+  
+      p {
+        margin: 4px 0;
+  
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+  
+      .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+  
+        &--delete {
+          background-color: #ff4d4d; 
+          color: #fff;
+  
+          &:hover {
+            background-color: #e60000; 
+          }
+        }
+  
+        &--view {
+          background-color: #007bff; 
+          color: #fff;
+  
+          &:hover {
+            background-color: #0056b3; 
+          }
+        }
+  
+        &--edit {
+          background-color: #007bff; 
+          color: #fff;
+  
+          &:hover {
+            background-color: #218838; 
+          }
+        }
+      }
+    }
+  }
+  

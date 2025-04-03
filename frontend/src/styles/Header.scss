@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3c3b3bcc; 
+    color: #fff; 
+  
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  
+    &__profile {
+      display: flex;
+      align-items: center;
+  
+      &-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #fff; 
+        object-fit: cover;
+      }
+    }
+  }
+  
+
+  

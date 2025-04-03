@@ -1,0 +1,28 @@
+.home {
+    .sub-home{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        .home-title {
+            color: black;
+            font-weight: bold;
+        }
+        .home-button{
+            background-color: blue; 
+            color: #fff; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       
+    }
+     .user-card-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+            margin: 20px; 
+        }
+    
+
+}

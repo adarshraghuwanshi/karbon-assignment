@@ -1,0 +1,103 @@
+.add-user-form {
+    position: fixed;
+    top: 10px;
+    left: 25%;
+    height: 100%;
+
+
+
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  
+    &__title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+  
+        input,
+        select,
+        textarea {
+          padding: 8px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+  
+          &:focus {
+            border-color: #007bff;
+            outline: none;
+          }
+        }
+  
+        textarea {
+          resize: none;
+          height: 80px;
+        }
+      }
+  
+      .radio-group {
+        display: flex;
+        gap: 10px;
+  
+        label {
+          display: flex;
+          align-items: center;
+  
+          input {
+            margin-right: 5px;
+          }
+        }
+      }
+  
+      .form-actions {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-between;
+  
+        .btn {
+          padding: 10px 20px;
+          font-size: 14px;
+          border-radius: 4px;
+          cursor: pointer;
+  
+          &--cancel {
+            background-color: #ff4d4d; 
+            color: white;
+            
+  
+            &:hover {
+              background-color: #e60000; 
+            }
+          }
+  
+          &--submit {
+            background-color: #007bff; 
+            color: white;
+  
+            &:hover {
+              background-color: #0056b3; 
+            }
+          }
+        }
+      }
+    }
+  }
+  
