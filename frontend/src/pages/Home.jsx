@@ -85,7 +85,16 @@ const Home =() => {
 
     //pagination
     const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  let itemsPerPage = 6;
+
+  const screenWidth = window.innerWidth;
+
+
+  if (screenWidth <= 480) {
+      itemsPerPage = 2;
+  } else if (screenWidth <= 768) {
+      itemsPerPage = 4;
+  } 
   
 
   const indexOfLastItem = currentPage * itemsPerPage;
