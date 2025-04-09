@@ -132,9 +132,7 @@ public String deleteUser(Long id) {
 
 public String generateAndSendOtp(String email) {
         Optional<User> userOptional = userRepository.findByEmail(email);
-        if (!userOptional.isPresent()) {
-            throw new RuntimeException("User not found");
-        }
+       
 
         User user = userOptional.get();
         // String otp = RandomString.make(6); 
@@ -176,7 +174,8 @@ public String generateAndSendOtp(String email) {
     
     user.setOtpHash(null);
     user.setOtpExpiryTime(null);
-    
+    userRepository.save(user);
+
     return user;
 }
 
