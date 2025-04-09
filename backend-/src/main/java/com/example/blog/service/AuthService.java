@@ -134,8 +134,19 @@ public String generateAndSendOtp(String email) {
         Optional<User> userOptional = userRepository.findByEmail(email);
        
 
-        User user = userOptional.get();
-        // String otp = RandomString.make(6); 
+        // User user = userOptional.get();
+        // // String otp = RandomString.make(6); 
+        User user;
+
+        if (userOptional.isPresent()) {
+        user = userOptional.get();
+         } else {
+        user = new User();
+        user.setEmail(email);
+        user.setFirstName("User");
+        user.setLastName("User");
+        user.setEncodedPassword("jfgtrkeygiofklderigtdmf");
+         }
         String otp = RandomStringUtils.randomNumeric(6);
         String hashedOtp = passwordEncoder.encode(otp);
 
